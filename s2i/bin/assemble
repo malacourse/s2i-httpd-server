@@ -8,6 +8,9 @@ rm -rf /tmp/src/.git*
 rm -rf /tmp/src/.s2i*
 
 cp -Rf /tmp/src/html /opt/app-root/htdocs
+echo "Chnaging config"
+cat /tmp/src/httpd.conf
+ls -lrt /tmp/src
 cp /tmp/src/httpd.conf /opt/app-root/
 rm -rf /tmp/src
 
