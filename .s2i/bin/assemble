@@ -7,7 +7,7 @@ echo "---> Copying source files"
 rm -rf /tmp/src/.git*
 rm -rf /tmp/src/.s2i*
 
-cp -Rf /tmp/src/html /opt/app-root/htdocs
+cp -Rf /tmp/src/html/* /opt/app-root/htdocs
 echo "Chnaging config"
 cat /tmp/src/httpd.conf
 ls -lrt /tmp/src
