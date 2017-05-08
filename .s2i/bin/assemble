@@ -3,6 +3,7 @@
 set -eo pipefail
 
 echo "---> Copying source files"
+echo "Bookstore service ip: ${bookstore_SERVICE_HOST}"
 
 rm -rf /tmp/src/.git*
 rm -rf /tmp/src/.s2i*
